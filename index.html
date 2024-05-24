@@ -1,11 +1,138 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thamis Cake</title>
+    <title>Thamys Cakes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kode+Mono:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <div><img src="images/bolo-box.png" alt="" class="logo"></div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Confeitaria</a></li>
+                <li><a href="sobrethamys.html">Sobre Thamys</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="help-icon">
+            <a href="">
+                <img src="images/icons8-suporte-on-line-40.png" alt="imagem de suporte">
+            </a>
+        </div>
+    </header>
+    <section class="section-box-one">
+        <h1 class="titulo-box-header">Thamiris Cake</h1>
+        <h3 class="subtitulo-box-header">Com amor e com carinho o amargo fica doce!</h3>
+    </section>
+    <div class="bubbles"></div>
+    <section>
+        <h2>Informações e Funcionamento</h2>
+
+        <p>O preço está R$70,00 o KG do bolo!</p>
+        <p>POlÍTICA DE VENDA! <br> 50% do valor será cobrado quando fizer o pedido</p>
+        <p> Não fazemos entrega! <br>somente retirada!</p>
+        <section>
+            <h2>Bolo</h2>
+            <ul class="inf-bolo">
+                <li>
+                    <p class="inf-bolo-p">Bolo feito com Chantininho</p>
+                </li>
+                <li>
+                    <p class="inf-bolo-p">O bolo terá massa pão de ló</p>
+                </li>
+                <li>
+                    <p class="inf-bolo-p">Bolo com Duas camadas de recheio</p>
+                </li>
+                <li>
+                    <p class="inf-bolo-p">Incluso o Topper da Sua Preferência</p>
+                </li>
+            </ul>
+            <h3>Opções de Recheio são:</h3>
+            <ul class="lista-recheios">
+                <li>
+                    <p>Creme base com pedaços de Abacaxi.</p>
+                </li>
+                <li>
+                    <p>Ninho</p>
+                </li>
+                <li>
+                    <p>Chocolate
+                    </p>
+                </li>
+                <li>
+                    <p>Coco
+                    </p>
+                </li>
+                <li>
+                    <p>Mousse de abacaxi
+                    </p>
+                </li>
+                <li>
+                    <p>Mousse de morango </p>
+                </li>
+                <li>
+                    <p>Mousse de maracujá
+                    </p>
+                </li>
+                <li>
+                    <p>Doce de leite
+                    </p>
+                </li>
+                <li>
+                    <p>Chocolate branco
+                    </p>
+                </li>
+                <li>
+                    <p>Sensação ( mousse de morango com raspas de chocolate )
+                    </p>
+                </li>
+                <li>
+                    <p>Quatro leites </p>
+                </li>
+                <li>
+                    <p>Bombom
+                    </p>
+                </li>
+                <li>
+                    <p>Ameixa
+                    </p>
+                </li>
+            </ul>
+            <p>Obs: os recheios de mousse são super levinhos e combina com qualquer recheio</p>
+            <p>Vc pode escolher 2 sabores !</p>
+        </section>
+        <h4>Pedidos</h4>
+    </section>
+    <section>
+        <h2>Produtos</h2>
+
+    </section>
+    <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+            const bubblesContainer = document.querySelector('.bubbles');
+            const numberOfBubbles = 20;
+
+            for (let i = 0; i < numberOfBubbles; i++) {
+                const bubble = document.createElement('span');
+                const size = Math.random() * 60 + 20;
+                bubble.style.width = `${size}px`;
+                bubble.style.height = `${size}px`;
+                bubble.style.left = `${Math.random() * 100}%`;
+                bubble.style.animationDuration = `${Math.random() * 20 + 10}s`;
+                bubble.style.animationDelay = `${Math.random() * 20}s`;
+                bubblesContainer.appendChild(bubble);
+            }
+        });
+    </script>
 </body>
+
 </html>
